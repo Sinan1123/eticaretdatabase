@@ -43,7 +43,7 @@ namespace OgrenmeProje
                 Fiyat = "199.99",
                 Stok = 50,
                 BarkodNo = "KULAK123",
-                KategoriId = 1 // dikkat!
+                KategoriId = 1 
             };
             Console.WriteLine(dbHelper.Urunekle(urun));
 
@@ -72,6 +72,8 @@ namespace OgrenmeProje
 
             string sonuc3 = dbHelper.SifreGuncelle(kullaniciId, mevcutSifre, yeniSifre);
             Console.WriteLine(sonuc3);
+            Console.WriteLine("merhaba");
+            
         }
     }
 }

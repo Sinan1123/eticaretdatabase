@@ -18,7 +18,7 @@ namespace OgrenmeProje.Data
 
         protected override void OnConfiguring( DbContextOptionsBuilder options)
         {
-            { 
+            {
 
             }
         }

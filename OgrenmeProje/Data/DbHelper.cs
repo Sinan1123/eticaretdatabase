@@ -60,6 +60,12 @@ namespace OgrenmeProje.Data
                 return "Şifreniz başarı ile güncellendi";
             }
         }
-
+        public string SifreyiUnuttum (int kullaniciId, string yeniSifre)
+        {
+            Kullanici data = _db.Kullanicilar.Find(kullaniciId);
+            data.Sifre = Auth.Hash(yeniSifre);
+            _db.SaveChanges();
+            return "Sifreniz başarıyla güncellendi";
+        }
     }
 }
